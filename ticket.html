@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs, querySeletor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form action="" method="post">
+        <div class="ticket">
+            <!-- Parte Izquierda -->
+            <div class="ticket-main">
+                <div class="cinema-name">IRONHACK CINEMAS</div>
+                <div class="movie-title">El Señor de los Códigos</div>
+
+                <div class="info-group">
+                    <div class="label">CLIENTE</div>
+                    <input type="text" name="nombre" id="">
+                </div>
+
+                <div class="row">
+                    <div class="info-group">
+                        <div class="label">FECHA</div>
+                        <input type="date" name="fecha" id="fecha">
+                    </div>
+                    <div class="info-group">
+                        <div class="label">HORA</div>
+                        <input type="datetime" name="hora" id="hora">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea divisoria / Perforación -->
+            <div class="divider"></div>
+
+            <!-- Parte Derecha (Resguardo) -->
+            <div class="ticket-stub">
+                <div class="stub-info">
+                    <div class="label">FILA</div>
+                    <input type="number" name="fila" id="fila" class="input-number" max="12" min="1">
+                </div>
+                <div class="stub-info">
+                    <div class="label">BUTACA</div>
+                    <input type="number" name="butaca" id="butaca" class="input-number" max="12" min="1">
+                </div>
+                <div class="barcode"></div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs, querySeletor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+        <div class="ticket">
+            <!-- Parte Izquierda -->
+            <div class="ticket-main">
+                <div class="cinema-name">IRONHACK CINEMAS</div>
+                <div class="movie-title">El Señor de los Códigos</div>
+
+                <div class="info-group" >
+                    <div class="label">CLIENTE</div>
+                    <input type="text" name="" id="cliente">
+                    <div id="cliente-impresion" class="impresion"></div>
+                </div>
+
+                <div class="row">
+                    <div class="info-group">
+                        <div class="label">FECHA</div>
+                        <input type="date" name="" id="fecha">
+                        <div id="fecha-impresion" class="impresion"></div>
+                    </div>
+                    <div class="info-group">
+                        <div class="label">HORA</div>
+                        <input type="datetime" name="" id="hora">
+                        <div id="hora-impresion" class="impresion"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Línea divisoria / Perforación -->
+            <div class="divider"></div>
+
+            <!-- Parte Derecha (Resguardo) -->
+            <div class="ticket-stub">
+                <div class="stub-info">
+                    <div class="label">FILA</div>
+                    <input type="number" name="" id="fila" class="input-number" max="12" min="1">
+                    <div id="fila-impresion" class="impresion input-number"></div>
+                </div>
+                <div class="stub-info">
+                    <div class="label">BUTACA</div>
+                    <input type="number" name="" id="butaca" class="input-number" max="12" min="1">
+                    <div id="butaca-impresion" class="impresion input-number"></div>
+                </div>
+                <div class="barcode"></div>
+            </div>
+        </div>
+    <button onclick="confirmarTicket()" class="confirmar-btn">CONFIRMAR TICKET</button>
+    <button id="editar" class="editar impresion" onclick="editar()">Editar Informacion</button>
+</body>
+
+</html>

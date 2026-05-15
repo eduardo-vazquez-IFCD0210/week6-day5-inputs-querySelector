@@ -1,0 +1,145 @@
+:root {
+  --bg-color: #1a1a1a;
+  --ticket-bg: #f9f9f9;
+  --accent: #e63946;
+  --text-dark: #2b2d42;
+  --text-light: #8d99ae;
+}
+
+body {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.input-number{
+    width: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.confirmar-btn, .editar {
+    padding: 20px;
+    background-color: blue;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.editar{
+    background-color: gray;
+    font-size: 1rem;
+}
+.impresion{
+    display: none;
+}
+
+.ticket {
+  display: flex;
+  background: var(--ticket-bg);
+  width: 500px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.ticket::before, .ticket::after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: var(--bg-color);
+  border-radius: 50%;
+  left: 72%;
+  z-index: 2;
+}
+.ticket::before { top: -15px; }
+.ticket::after { bottom: -15px; }
+
+.ticket-main {
+  flex: 2.5;
+  padding: 20px;
+  border-right: 2px dashed #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cinema-name {
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+}
+
+.movie-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin: 10px 0;
+}
+
+.info-group .label {
+  font-size: 0.7rem;
+  color: var(--text-light);
+}
+
+.info-group .value {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+.row {
+  display: flex;
+  gap: 30px;
+}
+
+.divider {
+  width: 2px;
+  background-color: transparent;
+}
+
+.ticket-stub {
+  flex: 1;
+  background: #eee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.stub-info {
+  margin-bottom: 15px;
+}
+
+.barcode {
+  height: 40px;
+  width: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    #333,
+    #333 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  opacity: 0.7;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

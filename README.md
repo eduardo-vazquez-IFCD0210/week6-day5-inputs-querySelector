@@ -13,3 +13,10 @@ Muestras el resultado en pantalla.
 ***
 Tarjeta de tu mascota (completando los textos con datos personales (inputs)
 y más adelante podemos ver como generar la tarjeta y imprimirla (img/pdf)
+
+
+## 3- PREDICCIONES SWITCH
+Bienvenid@ a la tu pitonisa de confianza! Dime tu signo del zodiaco y te diré como irá tu semana  :-)
+- Pedir al usuario su signo zodiacal mediante prompt, input o botones.
+- Que ejecute una función (si es necesaria) dentro de la cual debe hallarse un switch/case: "capricornio", "leo", "geminis"...
+- Y que muestre un vaticinio en pantalla (o alert, o consola)
